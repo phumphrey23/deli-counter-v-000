@@ -11,7 +11,7 @@ end
 
 def line(katz_deli)
   if katz_deli.lenth==0
-    puts "there is nobody in line"
+    puts "The line is currently empty."
   else
     katz_deli.each.with_index(1) do |name, index|
       puts "The line is currently: #{index}. #{name}"
