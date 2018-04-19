@@ -14,7 +14,7 @@ def line(katz_deli)
     puts "there is nobody in line"
   else
     katz_deli.each.with_index(1) do |name, index|
-      "The line is currently: #{index}. #{name}"
+      puts "The line is currently: #{index}. #{name}"
     end
   end
 end
