@@ -9,14 +9,17 @@ def now_serving(katz_deli)
   if katz_deli.length==0
     puts "There is nobody waiting to be served!"
   else
-    puts "some stuff"
+    katz_deli.each do |name, index|
+    puts "Currently serving #{name}."
   end
 end
 
 def line(katz_deli)
+  current_line = []
   if katz_deli.length==0
     puts "The line is currently empty."
   else
+    current_line.push
     katz_deli.each.with_index(1) do |name, index|
       puts "The line is currently: #{index}. #{name}"
     end
