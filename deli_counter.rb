@@ -12,6 +12,7 @@ def now_serving(katz_deli)
     katz_deli.each do |name, index|
     puts "Currently serving #{name}."
   end
+ end
 end
 
 def line(katz_deli)
